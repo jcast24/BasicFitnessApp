@@ -1,9 +1,9 @@
 # Basic fitness storing logger application
 
-# Purpose: 
+## Purpose: 
 
 To have a better understanding of JavaScript and how to implement the basic CRUD operations to a PostgreSQL database.
 
-# Stack:
+## Stack:
 
 Vanilla JS, HTML, CSS, PostgreSQL.
