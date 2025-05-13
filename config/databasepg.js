@@ -10,23 +10,3 @@ const pool = new Pool({
 });
 
 module.exports = pool;
-
-/* insertUser("Rick", "Dalton", "Admin").then((result) => {
-    if (result) {
-        console.log("Added.");
-    }
-}); */
-
-
-// This will be used in the service file
-/* deleteUser("Ash").then((result) => {
-    if (result) {
-        console.log("User deleted.");
-    }
-}); */
-
-/* updateUser("Rick", "student").then((result) => {
-    if (result) {
-        console.log("User updated!");
-    }
-}); */
