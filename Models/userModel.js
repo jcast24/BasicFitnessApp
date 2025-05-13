@@ -4,6 +4,7 @@ const getAllUsers = async () => {
     try {
         await db.connect();
         const result = await db.query("SELECT * FROM users");
+        // console.log(result);
         return result.rows;
     } catch (error) {
         console.error(error.stack);
@@ -51,4 +52,4 @@ const updateUser = async (firstName, role) => {
     } 
 };
 
-module.exports = { insertUser, deleteUser, updateUser };
+module.exports = { getAllUsers, insertUser, deleteUser, updateUser };
