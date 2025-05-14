@@ -1,16 +1,22 @@
 {
-  "name": "basicfitnessappv1",
-  "version": "1.0.0",
-  "description": "To have a better understanding of JavaScript and how to implement the basic CRUD operations to a PostgreSQL database.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.5.0",
-    "pg": "^8.15.6"
-  }
+    "name": "basicfitnessappv1",
+    "version": "1.0.0",
+    "description": "To have a better understanding of JavaScript and how to implement the basic CRUD operations to a PostgreSQL database.",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "pg": "^8.15.6"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
 }
