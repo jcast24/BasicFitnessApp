@@ -30,7 +30,7 @@ app.post("/submit", async (req, res) => {
 app.get("/users", async (req, res) => {
     try {
         const result = await pool.query("SELECT * FROM users");
-        res.json(200).json(result.rows);
+        res.status(200).json(result.rows);
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: "Database error" });
