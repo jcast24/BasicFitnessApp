@@ -1,3 +1,4 @@
+// submit the form
 document.getElementById("dataForm").addEventListener("submit", async (e) => {
     e.preventDefault();
 
@@ -15,4 +16,18 @@ document.getElementById("dataForm").addEventListener("submit", async (e) => {
     alert(result.message || result.error);
 });
 
+// Load all users
+document.getElementById("loadUsers").addEventListener("click", async () => {
+    const res = await fetch("http://localhost:3000/users");
+    const users = await res.json();
 
+
+    const userList = document.getElementById("userList");
+    userList.innerHTML = "";
+
+    users.forEach((user) => {
+        const li = document.createElement("li");
+        li.textContent = `${user.firstname} ${user.lastname} ${user.role}`;
+        userList.appendChild(li);
+    });
+});
