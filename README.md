@@ -1,4 +1,4 @@
-# Basic fitness storing logger application
+# Basic fullstack application
 
 ## Purpose: 
 
